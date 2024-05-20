@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.5s ease;
+    background-color: rgb(36, 31, 31);
+}
+
+#particles-js {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-color: transparent;
+}
+
+/* Navbar */
+.navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    box-shadow:
+        0px 2px 3px #3ab1ad,
+        -1px -2px 3px #3ab1ad;
+
+}
+
+.right-nav {
+    margin: 0;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sign {
+    display: flex;
+    color: #00FFFF;
+    flex-direction: col;
+    justify-content: center;
+    background-color: white;
+}
+
+.logo {
+    padding: 0;
+    height: 160%;
+    margin: -5% 10%;
+}
+
+.Git {
+    padding: 0;
+    width: auto;
+    height: 100%;
+    margin-right: 10px;
+
+}
+
+.signIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #000000;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: #00FFFF;
+    border: 3px solid #000000;
+    font-family: 'Inconsolata', monospace;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+.sign:hover {
+    color: #00FFFF;
+    border-color: #000000;
+    background-color: #000000;
+}
+
+/* Wrapper */
+.wrapper-link {
+    font-size: 20px;
+    color: #00FFFF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: #000000;
+    border: 3px solid #000000;
+    font-family: 'Inconsolata', monospace;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+.wrapper-link:hover {
+    color: black;
+    border-color: #000000;
+    background-color: #00FFFF;
+}
+
+
+.back {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.backlogo {
+    width: 40%;
+    height: auto;
+}
+
+.wrapper {
+    margin: 20px 80px;
+}
+
+.project-container {
+    gap: 70px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.project-box {
+    background-color: #00FFFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 230px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px #15b0a3c5, -2px -3px 4px #15b0a3c5;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.project-box .wrapper-link {
+    margin-bottom: 10px;
+
+}
+
+.sorting-labels {
+    font-family: 'Inconsolata', monospace;
+    ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 7px;
+
+}
+
+.sorting-label {
+    font-family: 'Inconsolata', monospace;
+    text-decoration: underline
+}
+
+.project-box label {
+    font-size: 15px;
+    color: #8f8787;
+    white-space: nowrap;
+
+}
+
+
+
+.project-box:hover.project-box h3,
+.project-box:hover.project-box>label {
+    position: relative;
+    color: black;
+    z-index: 2;
+}
+
+.project-box:hover.project-box>div>label {
+    position: relative;
+    color: black;
+    z-index: 2;
+}
+
+
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+/* Footer */
+.footer {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #00FFFF;
+    background-color: rgb(0, 0, 0);
+    height: 38vh;
+    width: 100%;
+    box-shadow:
+        -1px -2px 3px #3ab1ad,
+        0px 2px 3px #3ab1ad;
+    text-align: center;
+}
+
+.Intro {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #00FFFF;
+    font-family: 'Inconsolata', monospace;
+    font-size: large;
+}
+
+.Intro>p {
+    margin: 0;
+    padding: 0;
+}
+
+.Intro :first-child {
+    margin-top: 20px;
+}
+
+.Language>p {
+    margin: 10px 0px 0px 0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: large;
+    font-weight: 800;
+    font-stretch: extra-expanded;
+
+}
+
+.icon {
+    margin: 0;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.icon>img {
+    width: 3%;
+    padding: 3px;
+}
+
+.footer-section>p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    gap: 0;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Follow>a {
+    color: #00FFFF;
+    font-family: 'Inconsolata', monospace;
+}
+
+.btn {
+    align-items: center;
+    background-color: #00FFFF;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 15px;
+    justify-content: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    font-family: 'Inconsolata', monospace;
+}
+
+.btn:hover.btn {
+    position: relative;
+    color: #00FFFF;
+
+    background-color: #1f1a1a;
+    border: 1px solid #00FFFF;
+    z-index: 1;
+}
+
+
+.btn:active,
+.btn:hover {
+    outline: 0;
+}
+
+.fa {
+    color: inherit;
+    display: flex;
+    gap: 25px;
+}
+
+.fa>a {
+    color: #00FFFF;
+    font-size: x-large;
+}
+
+.footer-section .fa a {
+    text-decoration: none;
+}
