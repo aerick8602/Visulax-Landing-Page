@@ -15,7 +15,6 @@
             <canvas class="particles-js-canvas-el" width="1491" height="258"
                 style="width: 100%; height: 100%;"></canvas>
         </div>
-        <!-- navabr -->
         <div>
             <nav class="navbar">
                 <div>
@@ -37,7 +36,6 @@
             <img class="backlogo" src="/images/backlogo.png" alt="">
         </div>
         <br />
-        <!-- Wrapper -->
         <main class="wrapper">
             <div class="project-container">
                 <div class="project-box">
@@ -53,6 +51,17 @@
 
                     </div>
                 </div>
+                <div class="project-box">
+                    <a class="wrapper-link" href="Components/Searching/search.html"
+                        onclick="handleLinkClick(event)">Searching</a>
+                    <div class="sorting-labels">
+                        <label class="sorting-label">Linear Search</label>
+                        <label class="sorting-label">Binary Search</label>
+                        <label class="sorting-label">Jump Search</label>
+                        <label class="sorting-label">Exponent Search</label>
+                    </div>
+
+                </div>
 
                 <div class="project-box">
                     <a class="wrapper-link" href="Components/Tree/tree.html" onclick="handleLinkClick(event)">Tree</a>
@@ -66,13 +75,7 @@
                     <label class="sorting-label">Depth First Search(DFS)</label>
                     <label class="sorting-label">Breath First Search(BFS)</label>
                 </div>
-                <div class="project-box">
-                    <a class="wrapper-link" href="Components/Searching/search.html"
-                        onclick="handleLinkClick(event)">Searching</a>
 
-                    <label class="sorting-label">Linear Search</label>
-                    <label class="sorting-label">Binary Search</label>
-                </div>
                 <div class="project-box">
                     <a class="wrapper-link" href="Components/Sieve of Eratosthenes/soe.html"
                         onclick="handleLinkClick(event)">Sieve of Eratosthenes</a>
@@ -90,7 +93,6 @@
         </main>
         <br />
         <br />
-        <!-- Footer -->
         <footer class="footer">
             <div class="Intro">
                 <p>
@@ -114,12 +116,12 @@
             </div>
             <div class="footer-middle">
                 <div class="footer-section Contact">
-                    <p><b>Contact Us</b></p>
+                    <div class="section"><b>Contact Us</b></div>
                     <p>Phone: (123) 456-7890</p>
                     <p>Email: contact@algorithmvisualizer.com</p>
                 </div>
                 <div class="footer-section Follow">
-                    <p><b>Follow Us</b></p>
+                    <div class="section"><b>Follow Us</b></div>
                     <div class="fa">
                         <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
                         <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
@@ -129,16 +131,15 @@
                 </div>
 
                 <div class="footer-section Support">
-                    <p><b>Support Us</b></p>
+                    <div class="section"><b>Support Us</b></div>
                     <form action="/subscribe" method="post">
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                        <button class=" btn Subcribe">Subcribe</button>
+                        <input class="email" type="email" name="email" placeholder="Enter your email" required>
+                        <button class="Subcribe">Subcribe</button>
                     </form>
                 </div>
             </div>
-            <br />
             <div class="footer-section">
-                <p>Made with ❤️ by <b>AYUSH KATIYAR</b>. Special thanks to OpenAI's ChatGPT 😁😁😁 </p>
+                <p>Made with ❤️ by <b>AYUSH KATIYAR</b>. Special thanks to OpenAI's ChatGPT 😁😁</p>
                 <p>Powered by <b>VISULAX</b></p>
             </div>
         </footer>
@@ -148,9 +149,9 @@
 
 
 
-    <script src="index.js"></script>
-    <script type="text/javascript" src="particleJs/particles.js"></script>
-    <script type="text/javascript" src="particleJs/particles_config.js"></script>
+    <script src="Js/index.js"></script>
+    <script type="text/javascript" src="Js/particles.js"></script>
+    <script type="text/javascript" src="Js/particles_config.js"></script>
 
 </body>
 
